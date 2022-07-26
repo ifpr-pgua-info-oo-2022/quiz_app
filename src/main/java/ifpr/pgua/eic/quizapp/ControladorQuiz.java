@@ -29,7 +29,7 @@ public class ControladorQuiz {
     }
 
     public boolean temProximaQuestao(){
-        return questaoAtual < questoes.size();
+        return questaoAtual < questoes.size()-1;
     }
 
     public void proximaQuestao(){
