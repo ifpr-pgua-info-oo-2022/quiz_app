@@ -45,7 +45,8 @@ public class ControladorQuiz {
     }
 
     public boolean respondeQuestao(String alternativa){
-        if(questoes.get(questaoAtual).getRespostaCorreta().equals(alternativa)){
+        Questao questao = questoes.get(questaoAtual);
+        if(questao.getRespostaCorreta().equals(alternativa)){
             acertos +=1;
             return true;
         }
